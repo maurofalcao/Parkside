@@ -690,3 +690,138 @@ section {
     scroll-margin-top: 80px;
 }
 
+
+/* Bulletin Section */
+.bulletin {
+    padding: 5rem 0;
+    background-color: #f9fafb;
+}
+
+.bulletin h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.bulletin-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.bulletin-info h3 {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+}
+
+.bulletin-verse {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    border-left: 4px solid #d4af37;
+}
+
+.bulletin-verse blockquote {
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+.bulletin-verse cite {
+    font-weight: 600;
+    color: #1e3a8a;
+    font-style: normal;
+}
+
+.bulletin-download {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bulletin-download h4 {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+}
+
+/* Events Section */
+.events {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.events h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.events-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.event-schedule h3,
+.special-events h3 {
+    color: #1e3a8a;
+    margin-bottom: 2rem;
+}
+
+.schedule-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.schedule-item {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #d4af37;
+}
+
+.schedule-item h4 {
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-item .time {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.schedule-item .description {
+    color: #6b7280;
+    margin: 0;
+}
+
+.special-events {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .bulletin-content,
+    .events-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .schedule-grid {
+        gap: 1.5rem;
+    }
+    
+    .schedule-item {
+        padding: 1.5rem;
+    }
+}
+
